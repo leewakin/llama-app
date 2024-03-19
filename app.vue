@@ -46,7 +46,7 @@ function genMessageId() {
   <div class="min-h-screen w-screen">
     <div class="container mx-auto">
       <div class="grid h-screen grid-rows-[1fr,auto] gap-y-2 p-2">
-        <ul>
+        <ul class="overflow-auto">
           <li v-for="message in messages" :key="message.id">
             <ChatSystem
               v-if="message.role === Role.system"
