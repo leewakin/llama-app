@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "pnpm i",
+  "buildCommand": "pnpm build",
+  "rewrites": [
+    {
+      "source": "/chat(/.*)?",
+      "destination": "/$1"
+    }
+  ]
+}
