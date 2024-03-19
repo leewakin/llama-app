@@ -3,13 +3,12 @@ const options = {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
-    Authorization: 'Bearer sk-831e2ffc630cd5a97604781bf9a6fe72'
+    Authorization: 'Bearer ' + import.meta.env.LLAMA_API_SECRET
   }
 }
 
 export default defineEventHandler(async event => {
   const params = await readBody(event)
-  console.log('params:', params)
 
   try {
     const res = await fetch(url, {
