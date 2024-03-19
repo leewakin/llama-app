@@ -5,6 +5,8 @@ import ChatAssistant from './components/ChatAssistant.vue'
 
 import { Role } from './constants'
 
+// TODO auto scroll to bottom
+
 const messages = ref<Message[]>([
   { id: genMessageId(), role: Role.system, content: 'Welcome to the chat!' }
 ])
